@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1774b7 50%, #0f0342 50%);
+        }
+
+        header {
+            background-color: goldenrod;
+            color: blue;
+            text-align: center;
+            padding: 1em;
+        }
+        footer {
+            background-color: goldenrod;
+            color: black;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .pricing-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 2em;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+
+        .pricing-tier {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 2em;
+            flex: 1;
+            margin: 1em;
+            text-align: center;
+        }
+        .pricing-tier:hover {
+            background-color: goldenrod;
+            border-radius: 10px;
+            box-shadow: 1 1 10px rgba(0, 0, 0, 0.1);
+            padding: 4em;
+            flex: 1;
+            margin: 1em;
+            text-align: center;
+        }
+
+
+        .pricing-tier h2 {
+            color: #333;
+        }
+
+        .pricing-tier p {
+            color: #666;
+        }
+
+        .pricing-tier button,select {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 1em 2em;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    </style>
+    <title>Price Landing Page</title>
+</head>
+<body>
+
+    <header>
+        <h1> Select a Subscription Plan!!</h1>
+        <select id="cur">
+            <option>India</option>
+            <option>America</option>
+        </select>
+    </header>
+
+    <div class="pricing-container">
+        <div class="pricing-tier">
+            <h2>Basic Plan</h2>
+            <p>Perfect for individuals</p>
+            <p class="currency">Rs.199/month</p>
+            <button onclick=Message1()>Get Started</button>
+        </div>
+
+        <div class="pricing-tier">
+            <h2>Pro Plan</h2>
+            <p>Great for small businesses</p>
+            <p class="currency">Rs.299/month</p>
+            <button onclick=Message2()>Get Started</button>
+        </div>
+
+        <div class="pricing-tier">
+            <h2>Enterprise Plan</h2>
+            <p>For large corporations</p>
+            <p>Contact us for pricing</p>
+            <button onclick=Message3()>Contact Sales</button>
+        </div>
+    </div>
+    <footer>
+        <h3>&copy; All rights are reserved</h3>
+    </footer>
+</body>
+<script>
+
+    function Message1(){
+        window.alert("You have selected Basic Plan, click ok to continue!")
+    }
+    function Message2(){
+        window.alert("You have selected Pro Plan, click ok to continue!")
+    }
+    function Message3(){
+        window.alert("You have selected Enterprise Plan, click ok to continue!")
+    }
+</script>
+</html>
