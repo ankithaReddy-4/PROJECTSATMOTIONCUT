@@ -7,4 +7,4 @@
   <li>I have used the onclick attribute in the button and made the interaction feasible with appropriate functions using Javascript. Finally it's been a great experience putting my skills into the real-world application.</li>
 </ol>
 <p>PROJECT 2 : DEVELOPING A REGISTRATION FORM</p>
-<p>PROJECT 1 : DEVELOPING A E-COMMERCE PRODUCT PAGE USING MEDIA QUERIES</p>
+<p>PROJECT 3 : DEVELOPING A E-COMMERCE PRODUCT PAGE USING MEDIA QUERIES</p>
