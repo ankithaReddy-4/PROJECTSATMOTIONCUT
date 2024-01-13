@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .product-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            width: 60%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-details {
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .product-price {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .add-to-cart-btn,
+        .learn-more-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .add-to-cart-btn {
+            background-color: #4caf50;
+        }
+
+        .learn-more-btn {
+            background-color: #3498db;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .product-container {
+                padding: 10px;
+            }
+
+            .product-details {
+                padding: 10px;
+            }
+
+            .product-title {
+                font-size: 20px;
+            }
+
+            .product-description {
+                font-size: 14px;
+            }
+
+            .product-price {
+                font-size: 18px;
+            }
+
+            .btn-container {
+                flex-direction: column;
+            }
+
+            .add-to-cart-btn,
+            .learn-more-btn {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    </style>
+    <title>Product Page</title>
+</head>
+<body>
+
+<div class="product-container">
+    <img class="product-image" src="PRODUCT2.jpeg" alt="Product Image">
+    <div class="product-details">
+        <div class="product-title">Product Name</div>
+        <div class="product-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo vel nulla facilisis
+            tincidunt ac quis ligula.
+        </div>
+        <div class="product-price">$99.99</div>
+        <div class="btn-container">
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <button class="learn-more-btn">Learn More</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
